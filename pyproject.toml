@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "cancer_data"
-version = "0.3.4"
+version = "0.3.6"
 description = "Preprocessing for various cancer genomics datasets"
- authors = ["Kevin Hu <kevinhuwest@gmail.com>"]
+authors = ["Kevin Hu <kevinhuwest@gmail.com>"]
 
 license = "MIT"
 readme = "README.md"
@@ -10,28 +10,25 @@ homepage = "https://github.com/kevinhu/cancer_data"
 repository = "https://github.com/kevinhu/cancer_data"
 keywords = ["cancer", "data", "genomics"]
 
-include = [
-    "LICENSE",
-]
+include = ["LICENSE"]
 
 [tool.poetry.dependencies]
-python = ">=3.6.1,<4.0"
-gtfparse = "^1.2.0"
-scipy = "^1.5.1"
-requests = "^2.24.0"
-tqdm = "^4.48.0"
-tables = "^3.6.1"
-xlrd = ">=1.2,<3.0"
-pandas = "^1.0.5"
+python = ">=3.9,<4.0"
+gtfparse = "^2.5.0"
+scipy = "^1.13.0"
+requests = "^2.31.0"
+tqdm = "^4.66.2"
+tables = "^3.9.2"
+xlrd = ">=2.0.1"
+pandas = "^2.2.1"
 
 [tool.poetry.dev-dependencies]
-ipython = "^7.16.2"
-matplotlib = "^3.3.4"
+matplotlib = "^3.8.4"
 seaborn = "^0.11.2"
 jupyter = "^1.0.0"
-black = "^20.8b1"
-isort = "^5.10.1"
-pylint = "^2.10.2"
+black = "^24.3.0"
+isort = "^5.13.2"
+pylint = "^3.1.0"
 poethepoet = "^0.10.0"
 
 [tool.isort]
