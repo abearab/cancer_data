@@ -236,7 +236,7 @@ class Processors:
 
         """
 
-        df = pd.read_excel(raw_path)
+        df = pd.read_excel(raw_path, engine='xlrd')
         df = df[df["Case ID"].apply(lambda x: x[:4] == "TCGA")]
         df["sample_type"] = df["Tumor Filename"].apply(lambda x: x.split("-")[3][:-1])
         df["Case ID"] = df["Case ID"] + "-" + df["sample_type"]
